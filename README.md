@@ -3,10 +3,10 @@ In your portfolio project, create a file called README.md. This can be thought o
 ULYESSES MEZA
 
 Title
-ESTORES
+Dataweb
 
 Description
-Estores is a database collection of multiple websites and holds customers  and the products they have purchased from the websites. These are not actual products they sell but rather examples.
+Dataweb is a database collection of multiple websites and holds customers  and the products they have purchased from the websites. These are not actual products they sell but rather examples.
 
 API Reference Table of endpoint paths, methods, parameters
 The API i used for 'website' table is GET, POST, DELETE, AND PATCH. As well for customers GET. For 'website' the parameters include id, name, and niche. 
