@@ -1,4 +1,38 @@
-<h1>Welcome to DataWeb
+{% load static %}
 
-</h1>
-<h2>Find lists and queries</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1>Welcome to DataWeb
+        <meta charset="UTF-8" />
+        <title>{% block title %}Student Management{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="{% url 'dataweb' %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'customer' %}">Customers</a>
+
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>{% block content %}{% endblock %}</main>
+
+        <aside>
+            <h2>About</h2>
+            <p>
+                This is a simple student management system. Click on the "Customer"
+                link to view a list of customers and their details. Click on the
+                "Grades" link to view a list of grades for each customer. The "Home"
+                link takes you back to this page.
+            </p>
+        </aside>
+    </div>
+</body>
